@@ -17,12 +17,21 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="BasicSample.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="D3DUtility.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="D3DUtility.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="BasicSample.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

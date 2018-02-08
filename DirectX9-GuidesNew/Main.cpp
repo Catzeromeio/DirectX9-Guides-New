@@ -1,6 +1,7 @@
-#include<windows.h>
 #include "stdafx.h"
 #include "D3DUtility.h"
+#include "BasicSample.h"
+
 using namespace d3d;
 
 LRESULT CALLBACK WindowProc(HWND hwnd, UINT uMsg, WPARAM wParam, LPARAM lParam);
@@ -37,8 +38,9 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR pCmdLine, int nCmdShow
 		return 0;
 	}
 
-	//InitD3D(hwnd);
-	//SetUp();
+	BasicSample theSample =  BasicSample();
+	theSample.InitD3D(hwnd);
+	theSample.SetUp();
 
 	static float lastTime = (float)timeGetTime();
 
@@ -56,12 +58,12 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR pCmdLine, int nCmdShow
 
 		if (msg.message == WM_QUIT)
 		{
-		//	CleanUp();
+		theSample.CleanUp();
 			return 0;
 		}
 
 		float deltaTime = (currentTime - lastTime)*0.001f;
-		//Display(deltaTime);
+		theSample.Display(deltaTime);
 
 		lastTime = currentTime;
 	}
