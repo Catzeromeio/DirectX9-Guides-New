@@ -1,6 +1,7 @@
 #include "stdafx.h"
 #include "D3DUtility.h"
 #include "BasicSample.h"
+#include "SampleRotateCube.h"
 
 using namespace d3d;
 
@@ -38,9 +39,9 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR pCmdLine, int nCmdShow
 		return 0;
 	}
 
-	BasicSample theSample =  BasicSample();
-	theSample.InitD3D(hwnd);
-	theSample.SetUp();
+	BasicSample* theSample = new SampleRotateCube();
+	theSample->InitD3D(hwnd);
+	theSample->SetUp();
 
 	static float lastTime = (float)timeGetTime();
 
@@ -58,12 +59,12 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR pCmdLine, int nCmdShow
 
 		if (msg.message == WM_QUIT)
 		{
-		theSample.CleanUp();
+		theSample->CleanUp();
 			return 0;
 		}
 
 		float deltaTime = (currentTime - lastTime)*0.001f;
-		theSample.Display(deltaTime);
+		theSample->Display(deltaTime);
 
 		lastTime = currentTime;
 	}

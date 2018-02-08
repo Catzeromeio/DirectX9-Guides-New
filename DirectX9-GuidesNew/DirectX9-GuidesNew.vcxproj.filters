@@ -23,6 +23,9 @@
     <ClCompile Include="D3DUtility.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="SampleRotateCube.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -32,6 +35,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="BasicSample.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleRotateCube.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>

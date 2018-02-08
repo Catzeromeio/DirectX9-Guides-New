@@ -31,11 +31,13 @@
     <ClCompile Include="D3DUtility.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SampleRotateCube.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D3DUtility.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="BasicSample.h" />
+    <ClInclude Include="SampleRotateCube.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>
