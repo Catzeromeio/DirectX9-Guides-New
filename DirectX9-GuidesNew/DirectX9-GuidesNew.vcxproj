@@ -25,6 +25,7 @@
     <ClCompile Include="Main.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
     </ClCompile>
+    <ClCompile Include="SampleLight.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>
@@ -38,6 +39,7 @@
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="BasicSample.h" />
     <ClInclude Include="SampleRotateCube.h" />
+    <ClInclude Include="SampleLight.h" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>15.0</VCProjectVersion>

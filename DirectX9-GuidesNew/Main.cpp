@@ -1,7 +1,7 @@
 #include "stdafx.h"
 #include "D3DUtility.h"
 #include "BasicSample.h"
-#include "SampleRotateCube.h"
+#include "SampleLight.h"
 
 using namespace d3d;
 
@@ -39,7 +39,7 @@ int WINAPI wWinMain(HINSTANCE hInstance, HINSTANCE, PWSTR pCmdLine, int nCmdShow
 		return 0;
 	}
 
-	BasicSample* theSample = new SampleRotateCube();
+	BasicSample* theSample = new SampleLight();
 	theSample->InitD3D(hwnd);
 	theSample->SetUp();
 
