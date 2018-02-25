@@ -17,7 +17,7 @@ bool SampleLight::SetUp()
 	m_Device->SetRenderState(D3DRS_ZENABLE, TRUE);
 
 	// Create the vertex buffer.
-	if (FAILED(m_Device->CreateVertexBuffer(50 * 2 * sizeof(NormalVertex),
+	if (FAILED(m_Device->CreateVertexBuffer( 3* sizeof(NormalVertex),
 		0, NormalVertex::FVF,
 		D3DPOOL_DEFAULT, &VB, NULL)))
 	{
