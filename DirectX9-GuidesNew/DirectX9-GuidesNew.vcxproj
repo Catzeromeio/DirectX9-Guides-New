@@ -26,6 +26,7 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Use</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="SampleLight.cpp" />
+    <ClCompile Include="SampleTextureMapping.cpp" />
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
     </ClCompile>
@@ -36,6 +37,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="D3DUtility.h" />
+    <ClInclude Include="SampleTextureMapping.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="BasicSample.h" />
     <ClInclude Include="SampleRotateCube.h" />

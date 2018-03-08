@@ -29,6 +29,9 @@
     <ClCompile Include="SampleLight.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="SampleTextureMapping.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h">
@@ -44,6 +47,9 @@
       <Filter>头文件</Filter>
     </ClInclude>
     <ClInclude Include="SampleLight.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="SampleTextureMapping.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
